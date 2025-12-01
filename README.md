@@ -11,24 +11,50 @@ Denna moment 3 har vi skapat Single Page Application byggd i Vue.js. Webbplatsen
 
 ***Backend API (Render):***
 ***https://moment2-2-1.onrender.com/movies***
----
-
-## Tekniker som används
-
-- **Vue 32**
-- **Vue Router**
-- **Composition Options API (data, props, emits, methods)**
-- **Tailwind CSS**
-- **Axios**
-- **Vite**
-- **Fastify backend (Moment 2.2)**
-- **MongoDB Atlas**
-- **Render (hosting)**
 
 
 ---
 
-## 🚀 Installation och körning lokalt
+## Funktionalitet
+### Single-Page-Application
+Navigering sker med Vue Router utan sidladdningar.
+
+### Hämta filmer
+Använt Axios flr att hämtar automatiskt filmer från API:et med GET, POST, PUT, DELETE. Loading- och felmeddelanden visas vid Render-server.
+
+### Lägga till film
+Formulär med:
+- validering
+- spinner
+- success-meddelande som försvinner efter 3 sekunder
+
+### Uppdatera film (PUT)
+
+- Modal visas med befintliga värden
+- Användaren kan redigera och spara
+- PUT-anrop görs mot API:et
+- Tabell uppdateras automatiskt efter lyckad uppdatering
+- Success-meddelande visas
+
+### Lista filmer
+Tabell med filminformation, responsiv design och Netflix-liknande styling.
+
+### Radera film
+Full raderingsprocess med:
+- modal för bekräftelse
+- spinner på knappen
+- success-meddelande som försvinner efter 3 sek
+- API DELETE-anrop
+
+### Responsivt gränssnitt
+Optimerat för mobiler, surfplattor och desktop, inklusive hamburgarmeny.
+
+### Tailwind CSS
+Används för all styling inklusive animationer, färgtema och layout.
+
+---
+
+## Installation och körning lokalt
 
 ### 1. Klona repot
 
