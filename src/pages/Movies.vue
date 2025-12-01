@@ -62,6 +62,8 @@ import axios from "axios"
 import MovieForm from "../components/MovieForm.vue"
 import MovieTable from "../components/MovieTable.vue"
 
+const API = import.meta.env.VITE_API_URL
+
 export default {
   components: { MovieForm, MovieTable },
 
@@ -83,8 +85,8 @@ export default {
 
       try {
         const res = await axios.get(
-          "https://moment2-2-1.onrender.com/movies",
-          { timeout: 0 } // Render cold-start
+          `${API}/movies`,
+          { timeout: 0 }     // Render cold-start
         )
         this.movies = res.data
       } catch (err) {
@@ -122,6 +124,7 @@ export default {
   }
 }
 </script>
+
 
 <style scoped>
 /* Simple fade-in animation */
