@@ -6,15 +6,16 @@ Denna moment 3 har vi skapat Single Page Application byggd i Vue.js. Webbplatsen
 
 ## Länk till publicerad applikation
 
-**Frontend (Vercel):** 
-**https://moment3-movies-spa.vercel.app/**
-**Backend API (Render):**
-**https://moment2-2-1.onrender.com/movies**
+***Frontend (Vercel):*** 
+***https://moment3-movies-spa.vercel.app/***
+
+***Backend API (Render):***
+***https://moment2-2-1.onrender.com/movies***
 ---
 
 ## Tekniker som används
 
-- **Vue 3**
+- **Vue 32**
 - **Vue Router**
 - **Composition Options API (data, props, emits, methods)**
 - **Tailwind CSS**
@@ -32,7 +33,7 @@ Denna moment 3 har vi skapat Single Page Application byggd i Vue.js. Webbplatsen
 ### 1. Klona repot
 
 ```sh
-git clone <URL>
+git clone (https://github.com/SaraM47/moment3-movies-spa.git)
 cd movies-spa
 ```
 
