@@ -1,3 +1,47 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+@import "tailwindcss";
+
+/* Color palette and typography */
+:root {
+    --font-sans: "Lora", Georgia, serif;
+    --font-serif: "Cormorant Garamond", Georgia, serif;
+    --color-bg: #000000;
+    --color-brand: #e50914; 
+    --color-text: #ffffff;
+  }
+  
+  /* Globalt styling */
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+
+/* Active router-link underline */
+.router-link-exact-active {
+  position: relative;
+}
+
+.router-link-exact-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 3px;
+  background-color: #e50914; 
+}
+
+/* Modal backdrop */
+.modal-backdrop {
+  background: rgba(210, 210, 210, 0.35);
+}
+  
+  /* Cards */
+  @layer components {
+    .card {
+      @apply bg-white text-black rounded-lg shadow-lg p-6;
+    }
+  }
