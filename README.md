@@ -1,34 +1,50 @@
 # Film SPA – Vue.js + Tailwind + Fastify API
 
-Detta moment har skapat Single Page Application byggd i Vue.js för Moment 3.  
-Webbplatsen representerar mitt fritidsintresse, animerade film och anime filmer, och är kopplad till den REST-webbtjänst jag skapade i Moment 2.2 (Fastify + MongoDB).
-Applikationen hämtar, visar, lägger till, raderar och uppdaterar filmer via mitt externa API på Render.
+Denna moment 3 har vi skapat Single Page Application byggd i Vue.js. Webbplatsen representerar mitt fritidsintresse, animerade film och anime filmer, och är kopplad till den REST-webbtjänst jag skapade i Moment 2.2 (Fastify + MongoDB). Applikationen hämtar, visar, lägger till, raderar och uppdaterar filmer via mitt externa API på Render.
 
 ---
 
-## 🌐 Länk till publicerad applikation
+## Länk till publicerad applikation
 
 **Frontend (Vercel):** 
 **https://moment3-movies-spa.vercel.app/**
-
-Backend API (Render):  
-https://moment2-2-1.onrender.com/movies
+**Backend API (Render):**
+**https://moment2-2-1.onrender.com/movies**
 ---
 
-## Project Setup
+## Tekniker som används
+
+- **Vue 3**
+- **Vue Router**
+- **Composition Options API (data, props, emits, methods)**
+- **Tailwind CSS**
+- **Axios**
+- **Vite**
+- **Fastify backend (Moment 2.2)**
+- **MongoDB Atlas**
+- **Render (hosting)**
+
+
+---
+
+## 🚀 Installation och körning lokalt
+
+### 1. Klona repot
+
+```sh
+git clone <URL>
+cd movies-spa
+```
+
+### 2. Installera beroenden
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### 3. Starta projektet
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
