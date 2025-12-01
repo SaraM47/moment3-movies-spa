@@ -6,6 +6,15 @@ Applikationen hämtar, visar, lägger till, raderar och uppdaterar filmer via mi
 
 ---
 
+## 🌐 Länk till publicerad applikation
+
+**Frontend (Vercel):** 
+**https://moment3-movies-spa.vercel.app/**
+
+Backend API (Render):  
+https://moment2-2-1.onrender.com/movies
+---
+
 ## Project Setup
 
 ```sh
