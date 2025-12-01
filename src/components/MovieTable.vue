@@ -95,6 +95,8 @@ import axios from "axios"
 import ConfirmModal from "./ConfirmModal.vue"
 import UpdateModal from "./UpdateModal.vue"
 
+const API = import.meta.env.VITE_API_URL
+
 export default {
   props: ["movies"],
   emits: ["deleted", "updated"],
@@ -132,7 +134,7 @@ export default {
         this.success = ""
 
         // Delete request to backend
-        await axios.delete(`https://moment2-2-1.onrender.com/movies/${this.selectedId}`)
+        await axios.delete(`${API}/movies/${this.selectedId}`) 
 
         this.$emit("deleted")
         this.success = "Filmen har raderats!"
@@ -163,9 +165,10 @@ export default {
     async confirmUpdate(updatedMovie) {
       try {
         this.success = ""
+        
         // PUT request to update movie
         await axios.put(
-          `https://moment2-2-1.onrender.com/movies/${updatedMovie._id}`,
+          `${API}/movies/${updatedMovie._id}`,
           updatedMovie
         )
 
@@ -183,3 +186,4 @@ export default {
   }
 }
 </script>
+

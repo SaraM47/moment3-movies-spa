@@ -117,6 +117,8 @@
 // Importing axios for API requests
 import axios from "axios"
 
+const API = import.meta.env.VITE_API_URL
+
 // Emits event to parent when movie is added
 export default {
   emits: ["added"],
@@ -140,7 +142,7 @@ export default {
         this.success = false
 
         // Send POST request to server
-        await axios.post("https://moment2-2-1.onrender.com/movies", {
+        await axios.post(`${API}/movies`, {
           title: this.title,
           studio: this.studio,
           releaseYear: this.releaseYear,
@@ -176,6 +178,7 @@ export default {
   }
 }
 </script>
+
 
 <style scoped>
 /* Simple fade-in animation for success message */
