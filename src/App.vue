@@ -1,9 +1,22 @@
-<script setup></script>
-
 <template>
-<h1 class="text-3xl text-red-600 font-bold">
-  Tailwind fungerar nu
-</h1>
+  <div class="min-h-screen bg-black text-white">
+    <!-- Global header navigation -->
+    <Header />
+    <!-- Main content area where Vue Router loads pages -->
+    <main class="max-w-5xl mx-auto px-6 py-10">
+      <router-view />
+    </main>
+
+    <!-- Global footer -->
+    <Footer />
+  </div>
 </template>
 
-<style scoped></style>
+<script>
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
+
+export default {
+  components: { Header, Footer },
+};
+</script>
